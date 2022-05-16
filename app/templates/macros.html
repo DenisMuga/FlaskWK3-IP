@@ -9,7 +9,7 @@
           <p>{{pitch.post}}</p>
           <p class="text-center">Category: {{pitch.category}}</p>
           <footer class="blockquote-footer text-center">
-            Posted by: {{pitch.user.username}}
+            Pitched by: {{pitch.user.username}}
           </footer>
           <div>
             <span class="foot">{{pitch.comment.count()}} Comments</span>
@@ -34,8 +34,7 @@
           <a
             href="{{url_for('main.comment',pitch_id = pitch.id)}}"
             class="btn btn-outline-warning btn-sm mt-3 d-block"
-          >
-            Leave Comment</a
+          >Post your comment</a
           >
         </div>
       </div>

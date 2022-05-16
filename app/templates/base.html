@@ -31,15 +31,15 @@ rel="stylesheet"
     {% include "navbar.html" %}
     {% endblock %}
 
-    <div class="all row">
-        <div class="side col-md-3">
+    <div class="all row bg-dark">
+        <div class="side col-md-12">
             <ul>
-                <li class="list list-unstyled text-warning"><a class="text-bold text-warning" href="{{url_for('main.new_pitch')}}">Add a New Pitch</a></li>
+                <li class="list list-unstyled text-info"><a class="text-bold text-warning ms-5" href="{{url_for('main.new_pitch')}}">Add a New Pitch</a></li>
 
             </ul>
 
         </div>
-        <div class="main col-md-8">
+        <div class="main col-md-12">
             {% block content %}
             {% endblock %}
 
